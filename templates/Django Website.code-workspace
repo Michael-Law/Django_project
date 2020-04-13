@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "/home/michael/Documents/Dev/Django/logis/logis"
+		},
+		{
+			"path": "/home/michael/Documents/Dev/Django/liiaproject"
+		},
+		{
+			"path": "/home/michael/Documents/Dev/daily_ui_day1_sign_in/daily_ui_day1_sign_in"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "daily_ui_day1_sign_in"
+	}
+}

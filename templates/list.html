@@ -1,0 +1,16 @@
+{%extends "test.html"%}
+
+{%block list%}
+{%if all_sensors %} 
+    <ul>
+        {% for status in all_sensors %}
+            <li><a href="/sensor_status/ {{status.id}}/">{{status.position}}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+{% endif %}
+
+
+{%endblock%}
+
+

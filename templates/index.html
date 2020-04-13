@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+    <h1>Path optimiser</h1>
+ 
+    
+{%if all_sensors %} 
+    <ul>
+        {% for status in all_sensors %}
+            <li><a href="/sensor_status/ {{status.id}}/">{{status.position}}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+{% endif %}
+    <p>The graph below contains only random generated dummy data</p>
+
+    {{ graph_div|safe }}
+   
+</body>
+</html>

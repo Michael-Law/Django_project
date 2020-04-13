@@ -1,0 +1,104 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap.min.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'css/magnific-popup.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'css/jquery-ui.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'css/owl.carousel.min.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'css/bootstrap-datepicker.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'css/owl.theme.default.min.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'ccss/bootstrap-datepicker.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'fonts/flaticon/font/flaticon.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'css/aos.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'css/style.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'fonts/icomoon/style.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'style.fade.css'%}">
+<link rel="stylesheet" type="text/css" href="{%static 'animate.css'%}">
+
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700"> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Sign In</title>
+
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<style>
+		body {
+			background-color: #cccccc;
+		   }
+
+   </style>
+</head>
+
+<body>
+	<h1 class="mb-0"><a href="/" class="text-black h2 mb-0">Hygeia Technologies</a></h1>
+
+	&nbsp;
+	
+	<div class="container">
+		
+		<div class="login-box animated fadeInUp">
+			<div class="box-header">
+        <h2>Login</h2>
+
+			<form method="POST" id="add_form" action="{% url 'loginpage' %}">{% csrf_token %}
+        <div class="form-group">
+          <label >User Name</label>
+          <div class="input"><input type="text" name="username" required="required"></div>
+          <div class="clear"></div>
+      </div>
+      <div class="form-group">
+          <label >Password</label>
+          <div class="input"><input type="password" name="password" required="required"></div>
+          <div class="clear"></div>
+      </div>
+      <div class="form-group"> 
+        <label></label>
+          <div class="submit">
+            <button type="submit">Sign In</button>
+                    </div>
+          <div class="clear"></div> </div>
+        </div>
+  </form>
+			
+			<br/>
+			<a href="#"><p class="small">Forgot your password?</p></a>
+		</div>
+  </div>
+
+</body>
+
+<script>
+	$(document).ready(function () {
+    	$('#logo').addClass('animated fadeInDown');
+    	$("input:text:visible:first").focus();
+	});
+	$('#username').focus(function() {
+		$('label[for="username"]').addClass('selected');
+	});
+	$('#username').blur(function() {
+		$('label[for="username"]').removeClass('selected');
+	});
+	$('#password').focus(function() {
+		$('label[for="password"]').addClass('selected');
+	});
+	$('#password').blur(function() {
+		$('label[for="password"]').removeClass('selected');
+	});
+</script>
+
+</html>
