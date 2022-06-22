@@ -6,7 +6,7 @@ Django==3.0.5
 django-matplotlib==0.1
 idna==2.9
 networkx==2.4
-numpy==1.18.2
+numpy==1.22.0
 pandas==1.0.3
 Pillow==7.1.1
 plotly==4.6.0
